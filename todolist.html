@@ -19,45 +19,17 @@
                 <p>Your tasks are going awesome, keep it up</p>
             </div>
             <div class="counter">
-                <span class="done">0</span>/<span class="undone">0</span>
+                <span class="done">0</span>/<span class="all">0</span>
             </div>
         </div>
         <div class="event">
-            <input class="listAddInput" type="text" placeholder="Put Your tasks Here">
-            <button class="listAddButton">ADD <i class="fa-solid fa-circle-plus"></i></button>
+            <input onkeydown="enterKey(event)" class="listAddInput" type="text" placeholder="Put Your tasks Here">
+            <button onclick="Add()" class="listAddButton">ADD <i class="fa-solid fa-circle-plus"></i></button>
         </div>
         <div class="todo_list">
-            <div class="singleToDoList">
-                <i class="fa-solid fa-circle-check circle"></i>
-                <input type="text">
-                <button class="editButton">Edit <i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="deleteButton">Delete <i class="fa-solid fa-delete-left"></i></button>
-            </div>
-            <div class="singleToDoList">
-                <i class="fa-solid fa-circle-check circle"></i>
-                <input type="text">
-                <button class="editButton">Edit <i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="deleteButton">Delete <i class="fa-solid fa-delete-left"></i></button>
-            </div>
-            <div class="singleToDoList">
-                <i class="fa-solid fa-circle-check circle"></i>
-                <input type="text">
-                <button class="editButton">Edit <i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="deleteButton">Delete <i class="fa-solid fa-delete-left"></i></button>
-            </div>
-            <div class="singleToDoList">
-                <i class="fa-solid fa-circle-check circle"></i>
-                <input type="text">
-                <button class="editButton">Edit <i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="deleteButton">Delete <i class="fa-solid fa-delete-left"></i></button>
-            </div>
-            <div class="singleToDoList">
-                <i class="fa-solid fa-circle-check circle"></i>
-                <input type="text">
-                <button class="editButton">Edit <i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="deleteButton">Delete <i class="fa-solid fa-delete-left"></i></button>
-            </div>
+            
         </div>
+
 
 
         <div class="bg-pic">
@@ -70,7 +42,7 @@
 
 
 
-    <!-- =============== js link    ============ -->
+    <!-- =============== js link boostrap ============ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- JS link -->
     <script src="js/todolist.js"></script>
