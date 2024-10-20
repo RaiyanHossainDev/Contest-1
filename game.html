@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="shortcut icon" href="images/game/title icon.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="gamebar playerOne">
+        <div class="gameHead">
+            <h1>Player - 1 </h1>
+            <div class="game_text">
+                <h2>Give a number that player 2 and player 3 can guess, dont go easy <i class="fa-solid fa-face-kiss-beam"></i></h2>
+            </div>
+        </div>
+        <div class="event">
+            <input class="playerOneInput" type="number">
+            <button>Give</button>
+        </div>
+    </div>
+    <div class="gamebar playerTwo">
+        <div class="gameHead">
+            <h1>Player - 2 </h1>
+            <div class="game_text">
+                <h2>Guess the number that Player 1 has give. Try hard , You still have <span class="show">6 </span>chance, you can do this <i class="fa-solid fa-face-kiss-beam"></i></h2>
+            </div>
+            <div class="chances">
+                <span class="chance">0</span><span>/</span><span>6</span>
+            </div>
+        </div>
+        <div class="event">
+            <input class="playerTwoInput" type="number">
+            <button>Guess</button>
+        </div>
+    </div>
+    <div class="gamebar playerThree">
+        <div class="gameHead">
+            <h1>Player - 3 </h1>
+            <div class="game_text">
+                <h2>Player two cant make it. But you can ,Guess the number that Player 1 has give. Try hard , You still have <span class="show">6 </span>chance, you can do this <i class="fa-solid fa-face-kiss-beam"></i></h2>
+            </div>
+            <div class="chances">
+                <span class="chance">0</span><span>/</span><span>6</span>
+            </div>
+        </div>
+        <div class="event">
+            <input class="playerTwoInput" type="number">
+            <button>Guess</button>
+        </div>
+    </div>
+    
+    <div class="winner">
+        <h3>The winner is Player <span class="winner">p</span></h3>
+        <img src="images/game/winner.gif" alt="">
+    </div>
+    
+
+    <!-- js links -->
+     <script src="js/game.js"></script>
+</body>
+</html>
+
+
