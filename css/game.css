@@ -15,10 +15,14 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 h1,h2,h3,h4,h5,h6,p,span {
     font-family: sans-serif;
     /* color: #fff; */
+}
+button {
+    cursor: pointer;
 }
 /* ================== players CSS =================== */
 .gamebar {
@@ -96,23 +100,44 @@ h1,h2,h3,h4,h5,h6,p,span {
 .playerTwo {
     display: none;
 }
+.playerTwo .gameHead h1 {
+    color: rgb(0, 98, 255);
+} 
 .playerThree {
     display: none;
 }
-
-/* ===================== wiiner css ================= */
-.winner {
-    position: relative;
+.playerThree .gameHead h1 {
+    color: yellowgreen;
 }
-.winner img {
+.show {
+    color: gold;
+}
+/* ===================== wiiner css ================= */
+.winnerDiv {
+    position: relative;
+    display: none;
+}
+.winnerDiv img {
     border-radius: 20px;
     border: 2px solid #fff;
     width: 300px;
 }
-.winner h3 {
+.winnerDiv h3 {
     color: #fff;
     font-size: 20px;
     position: absolute;
     top: 20px;
     left: 45px;
+}
+/* ====================== start css ================== */
+.start img {
+    cursor: pointer;
+}
+/* ============= error css ========= */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+.error i {
+    color: orangered;
 }

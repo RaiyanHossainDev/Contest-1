@@ -9,7 +9,10 @@
     <link rel="shortcut icon" href="images/game/title icon.png" type="image/x-icon">
 </head>
 <body>
-    
+    <div class="errorParent"></div>
+    <div class="start">
+        <img src="images/game/start.jpg" alt="">
+    </div>
     <div class="gamebar playerOne">
         <div class="gameHead">
             <h1>Player - 1 </h1>
@@ -18,42 +21,42 @@
             </div>
         </div>
         <div class="event">
-            <input class="playerOneInput" type="number">
-            <button>Give</button>
+            <input onkeydown="playerOneKey(event)" class="playerOneInput" type="number">
+            <button onclick="playerOnefunc()">Give</button>
         </div>
     </div>
     <div class="gamebar playerTwo">
         <div class="gameHead">
             <h1>Player - 2 </h1>
             <div class="game_text">
-                <h2>Guess the number that Player 1 has give. Try hard , You still have <span class="show">6 </span>chance, you can do this <i class="fa-solid fa-face-kiss-beam"></i></h2>
+                <h2>Guess the number that Player 1 has give. Try hard , You still have <span class="show pTwoshow">6 </span> chance, you can do this <i class="fa-solid fa-face-kiss-beam"></i></h2>
             </div>
             <div class="chances">
                 <span class="chance">0</span><span>/</span><span>6</span>
             </div>
         </div>
         <div class="event">
-            <input class="playerTwoInput" type="number">
-            <button>Guess</button>
+            <input onkeydown="playerTwoKey(event)" class="playerTwoInput" type="number">
+            <button onclick="playerTwoFunc()">Guess</button>
         </div>
     </div>
     <div class="gamebar playerThree">
         <div class="gameHead">
             <h1>Player - 3 </h1>
             <div class="game_text">
-                <h2>Player two cant make it. But you can ,Guess the number that Player 1 has give. Try hard , You still have <span class="show">6 </span>chance, you can do this <i class="fa-solid fa-face-kiss-beam"></i></h2>
+                <h2>Player two cant make it. But you can ,Guess the number that Player 1 has give. Try hard , You still have <span class="show pThreeshow">6 </span>chance, you can do this <i class="fa-solid fa-face-kiss-beam"></i></h2>
             </div>
             <div class="chances">
                 <span class="chance">0</span><span>/</span><span>6</span>
             </div>
         </div>
         <div class="event">
-            <input class="playerTwoInput" type="number">
-            <button>Guess</button>
+            <input onkeydown="playerThreeKey(event)" class="playerThreeInput" type="number">
+            <button onclick="playerThreeFunc()">Guess</button>
         </div>
     </div>
     
-    <div class="winner">
+    <div class="winnerDiv">
         <h3>The winner is Player <span class="winner">p</span></h3>
         <img src="images/game/winner.gif" alt="">
     </div>
@@ -63,5 +66,6 @@
      <script src="js/game.js"></script>
 </body>
 </html>
+
 
 
